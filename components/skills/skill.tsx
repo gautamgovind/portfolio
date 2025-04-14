@@ -1,9 +1,6 @@
 "use client"
 import { fadeIn } from "@/framerMotion/variant";
 import { motion } from "framer-motion";
-import MySkills from "./my-skills";
-import Image from "next/image";
-import { assetsImages } from "@/assets/assets";
 import MobileSkillView from "./mobile-skill-view";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -14,6 +11,19 @@ import { SiRedux } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RxAccessibility } from "react-icons/rx";
+import { FaNodeJs } from "react-icons/fa6";
+import { GrGraphQl } from "react-icons/gr";
+import { SiSass } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
+import { VscAzure } from "react-icons/vsc";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiCypress } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { SiWebpack } from "react-icons/si";
+import { DiScrum } from "react-icons/di";
 
 import { IconType } from "react-icons";
 
@@ -58,13 +68,65 @@ const skills: SkillType[] = [
         skill: "TailwindCSS",
         icon: RiTailwindCssFill,
     },
+    {
+        skill: "NodeJS",
+        icon: FaNodeJs,
+    },
+    {
+        skill: "GraphQl",
+        icon: GrGraphQl,
+    },
+    {
+        skill: "SASS",
+        icon: SiSass,
+    },
+    {
+        skill: "Jquery",
+        icon: SiJquery,
+    },
+    {
+        skill: "Bootstrap",
+        icon: BsBootstrapFill,
+    },
+    {
+        skill: "Azure",
+        icon: VscAzure,
+    },
+    {
+        skill: "GIT",
+        icon: FaGitAlt,
+    },
+    {
+        skill: "Github",
+        icon: FaGithub,
+    },
+    {
+        skill: "Cypress",
+        icon: SiCypress,
+    },
+    {
+        skill: "Jest",
+        icon: SiJest,
+    },
+    {
+        skill: "Webpack",
+        icon: SiWebpack,
+    },
+    {
+        skill: "Vite",
+        icon: SiVite,
+    },
+    {
+        skill: "Agile scrum",
+        icon: DiScrum,
+    },
 ];
 
 
 const Skills = () => {
   return (
-    <div id="skills">
-      <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
+    <div id="skills" className="px-[10%]">
+      <div className=" mx-auto overflow-hidden">
         <motion.div
           variants={fadeIn("down", 0.2)}
           initial="hidden"
@@ -72,32 +134,22 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }}
         >
             <div className="flex flex-col items-center mt-[100px]">
-                <h2 className="text-6xl text-cyan mb-10">My Skills</h2>
+                <h2 className="text-6xl text-orange mb-10">My Skills</h2>
                 <p className="text-lg text-center">
-                    I not only work with these technologies but excellent in using them with
-                    best practices to deliver high-quality results, I have been working with
-                    all these skills to build my portfolio projects
+                Over the years, I’ve had the opportunity to work with a wide range of  technologies and tools, all depending on what my clients needed at the time. 
+                Lately, I’ve been living and breathing React, TypeScript, Node, Next.js, and a few other favorites. 
+                But let’s be real, this list is just the tip of the iceberg—there’s plenty more lurking on my LinkedIn and resume if you’re curious. 
+                The bottom line? I’m always up for trying new tools, exploring the latest trends, and taking on fresh challenges. Who knows, 
+                the next cool tech might be just around the corner!
                 </p>
             </div>
         </motion.div>
 
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
-          <MySkills myskills={skills} />
-        </div>
-
-        <div className="sm:block lg:hidden">
+        <div className="">
           <MobileSkillView myskills={skills} />
         </div>
         
       </div>
-
-      <div className="border-y-2 border-lightGrey relative ">
-        <div className="absolute bg-gradient-to-r from-orange to-cyan opacity-50 w-full h-full"></div>
-        <Image 
-            src={assetsImages.subSkills}
-            alt="subSkills image"
-        />
-        </div>
     </div>
   );
 };

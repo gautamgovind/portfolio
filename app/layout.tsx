@@ -3,8 +3,7 @@ import { Outfit, Ovo, Josefin_Sans, Nunito } from "next/font/google";
 import "./globals.css";
 import ThemeContextProvider from "@/components/context/theme-context";
 import Header from "@/components/header";
-import AsideContent from "@/components/aside-content";
-import Footer from "@/components/footer";
+import LayoutWrapper from "@/components/layout-wrapper";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -42,17 +41,8 @@ export default function RootLayout({
         className={`${OutfitFont.className} ${OvoFont.className} ${JosefinFont.className} ${NunitoFont.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         <ThemeContextProvider>
-        <Header />
-        <div className='flex w-full flex-col md:flex-row lg:flex-row justify-between pt-28'>
-          <aside className="hidden md:block w-full md:w-60 lg:w-80 border-r-[0.6px] border-dotted border-lightHover shadow-sm bg-opacity-50 bg-white  dark:text-white dark:border-0 dark:border-white/50 dark:bg-black relative">
-            <AsideContent />
-          </aside>
-          <div className="flex-1">
-            <main>{children}</main>
-            <Footer />
-          </div>
-        </div>
-        
+          <Header />
+          <LayoutWrapper>{children}</LayoutWrapper>
         </ThemeContextProvider>
       </body>
     </html>

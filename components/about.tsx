@@ -1,6 +1,6 @@
 "use client"
-import { assetsImages, infoList, toosData } from '@/assets/assets'
-import Image, { StaticImageData } from 'next/image'
+import { assetsImages, infoList } from '@/assets/assets'
+import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
 
@@ -36,7 +36,7 @@ const About = () => {
                 whileInView={{ opacity: 1, scale:1 }} 
                 transition={{duration: 0.6}}
             >
-                <Image src={assetsImages.gautamImg} alt='gautam' className='w-full rounded-3xl' />
+                <Image src={assetsImages.gautamImg} alt='gautam' priority className='w-full rounded-3xl' />
             </motion.div>
 
             <div className="w-full md:w-1/2 flex items-center">
@@ -85,7 +85,7 @@ const About = () => {
                         Tools I use
                 </motion.h4>
 
-                <motion.ul className='flex items-center gap-3 sm:gap-5'
+                {/* <motion.ul className='flex items-center gap-3 sm:gap-5'
                     initial={{opacity: 0}} 
                     whileInView={{ opacity: 1}} 
                     transition={{duration: 1.5, delay: 0.6}}
@@ -98,7 +98,7 @@ const About = () => {
                             <Image src={item} alt='tool' className='w-5 sm:w-7' />
                         </motion.li>
                     ))}
-                </motion.ul>
+                </motion.ul> */}
 
             </motion.div>
         </motion.div>

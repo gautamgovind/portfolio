@@ -46,7 +46,7 @@ const Introduction = () => {
         >
             I am a FE developer and accessibility consutatnt
         </motion.p>
-        <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
+        <div className='flex flex-col md:flex-row items-center gap-4 mt-4'>
             <motion.a 
                 href="#contact-section" 
                 className='px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2 dark:bg-transparent'
