@@ -26,6 +26,7 @@ import { SiWebpack } from "react-icons/si";
 import { DiScrum } from "react-icons/di";
 
 import { IconType } from "react-icons";
+import Roles from "../roles/roles";
 
 export type SkillType = {
     skill: string,
@@ -147,6 +148,9 @@ const Skills = () => {
 
         <div className="">
           <MobileSkillView myskills={skills} />
+        </div>
+        <div className="border-t border-gray-400">
+            <Roles />
         </div>
         
       </div>

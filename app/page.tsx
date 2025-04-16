@@ -12,11 +12,11 @@ import Work from "@/components/work";
 export default function Home() {
   return (
     <>
-      <Introduction />
-      <About  />
-      <Services />
-      <Work />
-      <Contact />
+        <Introduction />
+        <About  />
+        <Services />
+        <Work />
+        <Contact />
     </>
   );
 }

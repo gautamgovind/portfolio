@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeContextProvider from "@/components/context/theme-context";
 import Header from "@/components/header";
 import LayoutWrapper from "@/components/layout-wrapper";
+import { ImageKitProvider } from '@imagekit/next';
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -41,8 +42,10 @@ export default function RootLayout({
         className={`${OutfitFont.className} ${OvoFont.className} ${JosefinFont.className} ${NunitoFont.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
         <ThemeContextProvider>
+        <ImageKitProvider urlEndpoint="https://ik.imagekit.io/5rjlj8hkl">
           <Header />
           <LayoutWrapper>{children}</LayoutWrapper>
+          </ImageKitProvider>
         </ThemeContextProvider>
       </body>
     </html>

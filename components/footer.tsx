@@ -1,5 +1,5 @@
 "use client"
-import { assetsImages } from '@/assets/assets'
+import { assetsImages } from '@/components/lib/assets'
 import Image from 'next/image'
 import React from 'react'
 import { IoMdMail } from "react-icons/io";

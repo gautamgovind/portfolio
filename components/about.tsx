@@ -1,5 +1,5 @@
 "use client"
-import { assetsImages, infoList } from '@/assets/assets'
+import { assetsImages, infoList } from '@/components/lib/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
@@ -76,7 +76,7 @@ const About = () => {
                     ))}
                 </motion.ul>
 
-                <motion.h4 
+                {/* <motion.h4 
                     className='my-6 text-gray-700 font-Ovo dark:text-white'
                     initial={{opacity: 0, y:20 }} 
                     whileInView={{ opacity: 1, y:0 }} 
@@ -85,7 +85,7 @@ const About = () => {
                         Tools I use
                 </motion.h4>
 
-                {/* <motion.ul className='flex items-center gap-3 sm:gap-5'
+                <motion.ul className='flex items-center gap-3 sm:gap-5'
                     initial={{opacity: 0}} 
                     whileInView={{ opacity: 1}} 
                     transition={{duration: 1.5, delay: 0.6}}

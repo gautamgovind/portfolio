@@ -1,8 +1,9 @@
 "use client"
-import { serviceData, serviceDataType } from '@/assets/assets'
+import { serviceData, serviceDataType } from '@/components/lib/assets'
 import React from 'react'
 import { MdOutlineReadMore } from "react-icons/md";
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -35,7 +36,7 @@ const Services = () => {
              Today, as a Senior Frontend Developer, I focus on crafting accessible, high-quality solutions that make a real impact on users and businesses alike.
         </motion.p>
 
-        <motion.div className="grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-template-columns auto-rows-auto gap-6 my-10"
+        <motion.div className="grid md:grid-cols-3 grid-template-columns auto-rows-auto gap-6 my-10"
             initial={{opacity: 0 }} 
             whileInView={{ opacity: 1 }} 
             transition={{duration: 1, delay: 0.3}}
@@ -44,13 +45,13 @@ const Services = () => {
                 const Icon = icon;
                 return (
                     <motion.div key={index} 
-                        className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHoveer dark:hover:shadow-white '
+                        className='border border-gray-400 rounded-lg p-8 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHoveer dark:hover:shadow-white'
                         whileHover={{scale: 1.05}}
                     >
                         <div className="flex justify-center"><Icon size={30} /></div>
                         <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                         <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>{description}</p>
-                        <a href={link} className='flex items-center gap-2 text-sm mt-5'>Read more <MdOutlineReadMore /> </a>
+                        <Link href={link} className='flex items-center gap-2 text-sm mt-5'>Read more <MdOutlineReadMore size={20}/> </Link>
                     </motion.div>
                 )
             })}

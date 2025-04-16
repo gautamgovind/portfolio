@@ -1,5 +1,5 @@
 "use client"
-import { assetsImages } from '@/assets/assets'
+import { assetsImages } from '@/components/lib/assets'
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import { LuArrowDownRight } from "react-icons/lu";

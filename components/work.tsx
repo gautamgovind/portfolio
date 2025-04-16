@@ -1,14 +1,14 @@
 "use client"
-import { workData } from '@/assets/assets'
-import React from 'react'
+import { workData } from '@/components/lib/assets'
 import { BsFillSendFill } from "react-icons/bs";
 import { MdOutlineReadMore } from "react-icons/md";
 import { motion } from "framer-motion";
-import Image from 'next/image';
 import Link from 'next/link';
+import { Image } from "@imagekit/next";
 
 
 const Work = () => {
+
   return (
     <motion.div id='work-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
@@ -27,7 +27,7 @@ const Work = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.5, delay: 0.3}}
         >
-            Here my works will go..
+            and my journey goes here...
         </motion.p>
 
         <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 dark:text-black"
@@ -35,35 +35,38 @@ const Work = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.6, delay: 0.7}}
         >
-            {workData.map(({title, description, bgImage},index)=>(
-                <motion.div 
-                    key={index} 
-                    className='border border-gray-600 bg-white rounded-lg relative cursor-pointer group overflow-hidden flex flex-col' 
-                    whileHover={{scale:1.05}}
-                    transition={{duration: 0.3}}  
-                >
-                    {/* Image Section */}
-                <div className="relative w-full min-h-20">
-                    <Image
-                        src={bgImage}
-                        alt={title}
-                        fill
-                        className="object-cover object-center"
-                    />
-                </div>
-
-                    {/* Content Section */}
-                    <div className="flex-1 p-5 flex justify-between items-center">
-                        <div>
-                            <h2 className="font-semibold">{title}</h2>
-                            <p className="text-sm text-gray-700">{description}</p>
-                        </div>
-                        <div className="border rounded-full flex items-center justify-center border-black w-9 aspect-square shadow-[2px_2px_0_#000] group-hover:bg-gray-400 transition">
-                            <Link href="/my-journey"><BsFillSendFill /></Link>
-                        </div>
+            {workData.map(({title, description, bgImage},index)=>{
+                return(
+                    <motion.div 
+                        key={index} 
+                        className='border border-gray-600 bg-white rounded-lg relative cursor-pointer group overflow-hidden flex flex-col' 
+                        whileHover={{scale:1.05}}
+                        transition={{duration: 0.3}}  
+                    >
+                        {/* Image Section */}
+                    <div className="relative w-full min-h-20">
+                        <Image
+                            src={bgImage}
+                            alt={title}
+                            fill
+                            loading="lazy"
+                            className="object-cover object-center"
+                        />
                     </div>
-                </motion.div>
-            ))}
+    
+                        {/* Content Section */}
+                        <div className="flex-1 p-5 flex justify-between items-center">
+                            <div>
+                                <h2 className="font-semibold">{title}</h2>
+                                <p className="text-sm text-gray-700">{description}</p>
+                            </div>
+                            <div className="border rounded-full flex items-center justify-center border-black w-9 aspect-square shadow-[2px_2px_0_#000] group-hover:bg-gray-400 transition">
+                                <Link href="/my-journey"><BsFillSendFill /></Link>
+                            </div>
+                        </div>
+                    </motion.div>
+                )
+            })}
         </motion.div>
 
         <Link href="/my-journey">
