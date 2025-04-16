@@ -45,11 +45,7 @@ const Journey = () => {
                 >
                     <div className="w-full md:w-[60%] flex flex-col justify-center">
                         <h2 className="md:text-3xl sm:text-2xl">{name}</h2>
-                        <h2
-                            className={`text-xl font-thin font-special sm:text-center ${
-                            align === "left" ? "md:text-right" : "md:text-left"
-                            }`}
-                        >
+                        <h2 className="text-md font-thin font-special py-2">
                             {year}
                         </h2>
                         <div className="flex py-2 text-lg"><IoLocationOutline size={25} /><span>{location}</span> </div>
@@ -69,10 +65,11 @@ const Journey = () => {
                             {/* <Image src={image} alt="website image" className="w-full h-full" /> */}
                             <Image
                                 src={image}
-                                alt="Next.js logo"
+                                alt={name}
                                 width={400}
                                 height={200}
                                 loading="eager"
+                                className="object-cover w-full h-[200px]"
                                 style={showPlaceholder ? {
                                     backgroundImage: `url(${buildSrc({
                                         urlEndpoint: defaultBgImage,
@@ -88,10 +85,11 @@ const Journey = () => {
                            
                             <Image
                                 src={myimage}
-                                alt="Next.js logo"
+                                alt={name + "team"}
                                 width={400}
                                 height={400}
                                 loading="eager"
+                                className="object-cover w-full h-[400px]"
                                 style={showPlaceholder ? {
                                     backgroundImage: `url(${buildSrc({
                                     urlEndpoint: defaultBgImage,

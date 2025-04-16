@@ -34,9 +34,7 @@ const Roles = () => {
                 >
                     <div className="w-full md:w-[60%] flex flex-col justify-center">
                         <h2 className="md:text-3xl sm:text-2xl">{role}</h2>
-                        <h2
-                            className="text-md font-thin font-special py-2"
-                        >
+                        <h2 className="text-md font-thin font-special py-2">
                             {tools}
                         </h2>
                         <p>{description}</p>
@@ -45,7 +43,7 @@ const Roles = () => {
                         <div className="bg-darkBrown">
                             <Image
                                 src={image}
-                                alt="Next.js logo"
+                                alt=""
                                 width={400}
                                 height={200}
                                 
