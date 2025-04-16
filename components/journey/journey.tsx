@@ -32,9 +32,10 @@ const Journey = () => {
         </motion.div>
 
         <div className='flex flex-col gap-20 mx-auto my-12'>
-            {timeline.map(({ name, year, align, image, myimage, link, description, location }, index)=>(
+            {timeline.map(({ name, year, id, align, image, myimage, link, description, location }, index)=>(
                 <motion.div
-                    key={index}
+                    key={index+id}
+                    id={id}
                     variants={fadeIn("top", 0)}
                     initial="hidden"
                     whileInView="show"
@@ -89,7 +90,7 @@ const Journey = () => {
                                 width={400}
                                 height={400}
                                 loading="eager"
-                                className="object-cover w-full h-[400px]"
+                                className="w-full h-auto sm:h-[250px] md:h-[350px] object-contain sm:object-cover"
                                 style={showPlaceholder ? {
                                     backgroundImage: `url(${buildSrc({
                                     urlEndpoint: defaultBgImage,

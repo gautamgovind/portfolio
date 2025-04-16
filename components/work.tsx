@@ -30,7 +30,7 @@ const Work = () => {
             and my journey goes here...
         </motion.p>
 
-        <motion.div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 dark:text-black"
+        <motion.div className="grid grid-cols-1 md:grid-cols-3  gap-5 dark:text-black"
             initial={{opacity: 0 }} 
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.6, delay: 0.7}}

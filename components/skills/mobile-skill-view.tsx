@@ -20,7 +20,7 @@ const MobileSkillView = ({myskills}:Props) => {
               key={index}
               className="flex flex-col items-center py-2"
             >
-              <item.icon className="text-7xl text-orange" />
+              <item.icon className="text-7xl text-darkBrown dark:text-white" />
               <p className="text-center mt-4">{item.skill}</p>
             </motion.div>
           );

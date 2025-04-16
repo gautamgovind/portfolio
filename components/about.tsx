@@ -3,6 +3,7 @@ import { assetsImages, infoList } from '@/components/lib/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -64,14 +65,16 @@ const About = () => {
                     whileInView={{ opacity: 1}} 
                     transition={{duration: 0.8, delay: 1}}
                 >
-                    {infoList.map(({ title, description},index)=>(
+                    {infoList.map(({ title, description, link},index)=>(
                         <motion.li key={index} 
                             whileInView={{ scale: 1.05 }} 
                             className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHoveer/50'
                         >
                           
-                            <h3 className='my-4 font-semibold text-gra-700 dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                            <Link href={link}>
+                                <h3 className='my-4 font-semibold text-gra-700 dark:text-white'>{title}</h3>
+                                <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                            </Link>
                         </motion.li>
                     ))}
                 </motion.ul>

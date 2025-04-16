@@ -92,36 +92,43 @@ export const serviceData:serviceDataType[] = [
 ]
 
 export type infoListType = {
-    icon?: string;
+    link: string;
     title: string;
     description: string;
 }
 export const infoList: infoListType[] = [
     {
         title: 'Skills',
+        link: '/my-work',
         description: 'React JS, TypeScript, Next JS, HTML, CSS, JavaScript, ...more.',
     },
     {
         title: 'Education',
+        link: '/my-journey/#lpu',
         description: 'B.Tech in Electronics and Communication',
     },
     {
         title: 'Experience',
+        link: '/my-journey',
         description: 'With over 10 years of IT experience, I specialize in frontend development and web accessibility.',
     }
 ]
 export type timelineType = {
     location: string;
     name: string;
+    id: string;
     year: string;
-    image: string | StaticImageData;
-    link: string;
+    align: string;
+    image: string;
+    myimage: string;
     description: string;
+    link: string;
 }
-export const timeline = [
+export const timeline: timelineType[] = [
     {
         location: "Gothenburg, Sweden",
         name: "Nexer AB",
+        id: "nexer",
         year: "Nov 2022 - Till Date",
         align: "right",
         image: "/companies/nexer.png",
@@ -133,6 +140,7 @@ export const timeline = [
     {
         location: "Gothenburg, Sweden",
         name: "Ericsson (Nexer's client)",
+        id: "ericsson",
         year: "Nov 2022 - Dec 2024",
         align: "left",
         image: "/companies/ericsson.jpg",
@@ -143,6 +151,7 @@ export const timeline = [
     {
         location: "Bangalore, India",
         name: "IBM",
+        id: "ibm",
         year: "Apr 2021 - Sep 2022",
         align: "right",
         image: "/companies/ibm.jpg",
@@ -153,6 +162,7 @@ export const timeline = [
     {
         location: "Bangalore, India",
         name: "Ascena",
+        id: "ascena",
         year: "Jan 2018 - Mar 2021",
         align: "left",
         image:  "/companies/ascena.png",
@@ -163,6 +173,7 @@ export const timeline = [
     {
         location: "Bangalore, India",
         name: "Sapient",
+        id: "sapient",
         year: "Aug 2016 - Jan 2018",
         align: "right",
         image: "/companies/sapient.jpg",
@@ -173,6 +184,7 @@ export const timeline = [
     {
         location: "Kolkata, India",
         name: "Cognizant",
+        id: "cts",
         year: "Feb 2014 - Aug 2016",
         align: "left",
         image: "/companies/cognizant.jpg",
@@ -183,6 +195,7 @@ export const timeline = [
       {
         location: "Punjab, India",
         name: "LPU",
+        id: "lpu",
         year: "Aug 2009 - Aug 2013",
         align: "right",
         image: "/companies/lpu.jpg",

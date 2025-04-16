@@ -135,7 +135,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }}
         >
             <div className="flex flex-col items-center mt-[100px]">
-                <h2 className="text-6xl text-orange mb-10">My Skills</h2>
+                <h2 className="text-6xl mb-10">My Skills</h2>
                 <p className="text-lg text-center">
                 Over the years, I’ve had the opportunity to work with a wide range of  technologies and tools, all depending on what my clients needed at the time. 
                 Lately, I’ve been living and breathing React, TypeScript, Node, Next.js, and a few other favorites. 
