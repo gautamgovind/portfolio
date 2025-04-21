@@ -53,7 +53,7 @@ const AsideContent = () => {
                 <motion.li key={index} 
                     className={`py-3 transition-colors duration-300 ${
                         activeSection === href
-                        ? "text-blue-950 font-bold shadow-darkBrown" 
+                        ? "text-blue-950 font-bold shadow-darkBrown dark:text-white dark:shadow-white" 
                         : ""
                     }`}      
                     whileHover={{scale: 1.1}}

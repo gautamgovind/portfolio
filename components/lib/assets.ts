@@ -7,7 +7,20 @@ import gautamLogo from '../../assets/gautam-logo.png';
 import gautamfelogo from '../../assets/gautam-fe-logo.png';
 import subSkills from '../../assets/subSkills.jpg';
 
+import recom1 from '../../assets/recom-1.png';
+import recom2 from '../../assets/recom-2.png';
+import recom3 from '../../assets/recom-3.png';
+import recom4 from '../../assets/recom-4.png';
+import recom5 from '../../assets/recom-5.png';
+import recom6 from '../../assets/recom-6.png';
+import recom7 from '../../assets/recom-7.png';
+import recom8 from '../../assets/recom-8.png';
+
 export const defaultBgImage = "https://ik.imagekit.io/5rjlj8hkl";
+
+export const CarouselImages = [
+    recom1, recom2, recom3, recom4, recom5, recom6, recom7, recom8, 
+]
 
 export type assetsImagesType= {
     gautamImg: string | StaticImageData;

@@ -28,11 +28,11 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((_props, ref) => {
   return (
     <nav>
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 font-Outfit shadow-sm bg-opacity-50 bg-white  dark:text-white dark:border dark:border-white/50 dark:bg-transparent`}>
-            <li><Link href="/" className={isActive("/") ? "text-black font-bold shadow-darkBrown" : ""}>Home</Link></li>
+            <li><Link href="/" className={isActive("/") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>Home</Link></li>
             {/* prefetch only work in production, not in dev */}
-            <li><Link href="/my-journey" prefetch={true} className={isActive("/my-journey") ? "text-black font-bold shadow-darkBrown" : ""}>My Journey</Link></li> 
-            <li><Link href="/my-work" prefetch={true} className={isActive("/my-work") ? "text-black font-bold shadow-darkBrown" : ""}>My Work</Link></li>
-            <li><Link href="/#contact-section" className={isActive("/#contact-section") ? "text-black font-bold shadow-darkBrown" : ""}>Contact Me</Link></li>
+            <li><Link href="/my-journey" prefetch={true} className={isActive("/my-journey") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>My Journey</Link></li> 
+            <li><Link href="/my-work" prefetch={true} className={isActive("/my-work") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>My Work</Link></li>
+            <li><Link href="/#contact-section" className={isActive("/#contact-section") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>Contact Me</Link></li>
         </ul>
 
         {/* ----Mobile Menu---- */}
@@ -41,10 +41,10 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((_props, ref) => {
                 <RxCross2  size='2rem'/>
             </button>
             <ul className='flex flex-col gap-4 py-20 px-20 z-55'>
-                <li><Link href="/" className={isActive("/") ? "text-black font-bold shadow-darkBrown" : ""}>Home</Link></li>
-                <li><Link href="/my-journey" prefetch={true} className={isActive("/my-journey") ? "text-black font-bold shadow-darkBrown" : ""}>My Journey</Link></li>
-                <li><Link href="/my-work" prefetch={true} className={isActive("/my-work") ? "text-black font-bold shadow-darkBrown" : ""}>My Work</Link></li>
-                <li><Link href="/#contact-section" className={isActive("/#contact-section") ? "text-black font-bold shadow-darkBrown" : ""}>Contact Me</Link></li>
+                <li><Link href="/" className={isActive("/") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>Home</Link></li>
+                <li><Link href="/my-journey" prefetch={true} className={isActive("/my-journey") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>My Journey</Link></li>
+                <li><Link href="/my-work" prefetch={true} className={isActive("/my-work") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>My Work</Link></li>
+                <li><Link href="/#contact-section" className={isActive("/#contact-section") ? "text-black font-bold shadow-darkBrown dark:text-white dark:shadow-white" : ""}>Contact Me</Link></li>
             </ul>
         </div>
     </nav>
