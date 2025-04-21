@@ -1,11 +1,8 @@
 
-
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Introduction from "@/components/introduction";
-
-
-import Services from "@/components/services";
+import MyRoles from "@/components/my-roles";
 import Work from "@/components/work";
 
 
@@ -14,7 +11,7 @@ export default function Home() {
     <>
         <Introduction />
         <About  />
-        <Services />
+        <MyRoles />
         <Work />
         <Contact />
     </>

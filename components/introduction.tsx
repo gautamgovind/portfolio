@@ -32,19 +32,19 @@ const Introduction = () => {
             Hi! I&apos;m Gautam Govind 
         </motion.h3>
         <motion.h1 
-            className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'
+            className='text-3xl sm:text-6xl lg:text-[55px] font-Ovo'
             initial={{ y: -30, opacity: 0 }} 
             whileInView={{ y: 0, opacity: 1 }} 
             transition={{duration: 0.8, delay: 0.5}}
         >
-            Fontend Developer based in Gothenburg, Sweden
+            Frontend Developer based in Gothenburg, Sweden
         </motion.h1>
         <motion.p className='max-w-2xl mx-auto font-Ovo'
             initial={{opacity: 0 }} 
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.6, delay: 0.7}}
         >
-            I am a FE developer and accessibility consutatnt
+            I am a web developer and an accessibility consutatnt!
         </motion.p>
         <div className='flex flex-col md:flex-row items-center gap-4 mt-4'>
             <motion.a 

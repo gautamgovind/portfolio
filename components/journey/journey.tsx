@@ -1,18 +1,14 @@
 "use client"
-import React, { useState } from 'react';
 
 import { motion } from "framer-motion";
 import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 import { IoLocationOutline } from "react-icons/io5";
 import { fadeIn } from '@/framerMotion/variant';
 import { timeline } from '@/components/lib/assets';
-import { Image, buildSrc } from "@imagekit/next";
+import ImageWithFallback from '../lib/imageWithFallback';
 
-
-const defaultBgImage = "https://ik.imagekit.io/ikmedia";
 
 const Journey = () => {
-    const [showPlaceholder, setShowPlaceholder] = useState(true)
   return (
     <div className="flexmax-full mx-[10%] px-4">
         <motion.div
@@ -63,48 +59,22 @@ const Journey = () => {
                     <div className="w-full md:w-[40%] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
                         {/* <div className="w-full h-full bg-cyan opacity-30 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div> */}
                         <div className="bg-darkBrown">
-                            {/* <Image src={image} alt="website image" className="w-full h-full" /> */}
-                            <Image
-                                src={image}
-                                alt={name}
-                                width={400}
+                            <ImageWithFallback 
+                                src={image} 
+                                alt={`${name} team`} 
                                 height={200}
+                                width={400}
                                 loading="eager"
-                                className="object-cover w-full h-[200px]"
-                                style={showPlaceholder ? {
-                                    backgroundImage: `url(${buildSrc({
-                                        urlEndpoint: defaultBgImage,
-                                        src: "/defaultImg.jpg",
-                                        transformation: [ { quality: 8, blur: 90, }]
-                                    })})`,
-                                    backgroundSize: "cover",
-                                    backgroundRepeat: "no-repeat",
-                                } : {}}
-                                onLoad={() =>setShowPlaceholder(false)}
+                                classname="object-cover w-full h-[200px]"
                             />
                             <hr/>
-                           
-                            <Image
-                                src={myimage}
-                                alt={name + "team"}
-                                width={400}
+                            <ImageWithFallback 
+                                src={myimage} 
+                                alt={`${name} team`} 
                                 height={400}
+                                width={400}
                                 loading="eager"
-                                className="w-full h-auto sm:h-[250px] md:h-[350px] object-contain sm:object-cover"
-                                style={showPlaceholder ? {
-                                    backgroundImage: `url(${buildSrc({
-                                    urlEndpoint: defaultBgImage,
-                                    src: "/default-image.jpg",
-                                    transformation: [
-                                        // {}, // Any other transformation you want to apply
-                                        { quality: 10, blur: 90,}
-                                    ]
-                                    })})`,
-                                    backgroundSize: "cover",
-                                    backgroundRepeat: "no-repeat",
-                                } : {}}
-                                onLoad={() =>setShowPlaceholder(false)}
-                                onError={()=>setShowPlaceholder(true)}
+                                classname='w-full h-[400px] object-cover'
                             />
                         </div>
                     </div>

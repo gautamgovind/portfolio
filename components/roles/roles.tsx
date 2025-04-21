@@ -14,9 +14,6 @@ const Roles = () => {
         >
             <div className="flex flex-col items-center mt-[100px]" id='roles'>
                 <h2 className="text-6xl mb-10">Roles</h2>
-                <p className="text-lg text-center">
-                    Differnt roles
-                </p>
             </div>
         </motion.div>
         <div className='flex flex-col gap-20 mx-auto my-12'>
@@ -34,10 +31,10 @@ const Roles = () => {
                 >
                     <div className="w-full md:w-[60%] flex flex-col justify-center">
                         <h2 className="md:text-3xl sm:text-2xl">{role}</h2>
-                        <h2 className="text-md font-thin font-special py-2">
-                            {tools}
-                        </h2>
                         <p>{description}</p>
+                        <h2 className="text-md font-thin font-special py-2">
+                            <span className='font-bold'>Skills: </span>{tools}
+                        </h2>
                     </div>
                     <div className="w-full md:w-[40%] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
                         <div className="bg-darkBrown">

@@ -42,7 +42,7 @@ const About = () => {
 
             <div className="w-full md:w-1/2 flex items-center">
             <p className='mb-10 max-w-2xl font-Ovo'>
-                    Hi, I’m a frontend developer and accessibility consultant with over 10 years of experience crafting fast, user-friendly websites that drive real impact. 
+                    Hi, I’m a frontend developer and an accessibility consultant with over 10 years of experience developing fast, user-friendly websites that drive real impact. 
                     I&apos;ve worked across industries like eCommerce, telecom, healthcare, and insurance—translating complex challenges into clean, accessible solutions. 
                     I specialize in React and modern web technologies, enjoy leading teams, and thrive in collaborative environments where learning and knowledge-sharing are part of the culture.
                 </p>

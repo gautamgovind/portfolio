@@ -7,6 +7,7 @@ import gautamLogo from '../../assets/gautam-logo.png';
 import gautamfelogo from '../../assets/gautam-fe-logo.png';
 import subSkills from '../../assets/subSkills.jpg';
 
+export const defaultBgImage = "https://ik.imagekit.io/5rjlj8hkl";
 
 export type assetsImagesType= {
     gautamImg: string | StaticImageData;
@@ -74,13 +75,13 @@ export const serviceData:serviceDataType[] = [
     {
         icon: MdEngineering, 
         title: 'Web development',
-        description: 'web development using different fe techs',
+        description: 'Web development using different FE techs',
         link: '/my-work/#fe-devlopment'
     },
     {
         icon: FaUniversalAccess, 
         title: 'Web accessibility',
-        description: 'web development using different fe techs',
+        description: 'Evaluate the website for accessibility issues',
         link: '/my-work/#web-accessibility'
     },
     {
@@ -167,7 +168,7 @@ export const timeline: timelineType[] = [
         align: "left",
         image:  "/companies/ascena.png",
         myimage: "/personal/ascenaTeam.jpeg",
-        description: "It’s been a fantastic ride—from front-end developer to senior front-end developer—with plenty of laughs (and late nights) along the way. Colleagues turned into friends, and honestly, when you’re working with friends, even those extended hours feel a bit like hanging out—with extra debugging and occasional existential crises. And yes, post-work pizza or drinks definitely helped. 🍕🍻 Bonus: I got to collaborate closely with the US team and share ideas and work regularly, got many inside of American brands and culture 😄",
+        description: "It’s been a fantastic ride—from front-end developer to senior front-end developer—with plenty of laughs (and late nights) along the way. Colleagues turned into friends, and honestly, when you’re working with friends, even those extended hours feel a bit like hanging out—with extra debugging and occasional existential crises. And yes, post-work pizza or drinks definitely helped. 🍕🍻 Bonus: I got to collaborate closely with the US team and share ideas and work regularly, got many insights of American brands and culture 😄",
         link: "https://knitwellgroup.com/",
     },
     {
@@ -178,7 +179,7 @@ export const timeline: timelineType[] = [
         align: "right",
         image: "/companies/sapient.jpg",
         myimage: "/personal/sapientTeam.jpeg",
-        description: "Sapient gave me the perfect excuse to move to one of my favorite cities—aka the Silicon Valley of India—where I ended up spending more time than anywhere else besides my hometown. It’s also where my front-end skills got a glow-up, thanks to a constant stream of “fun little challenges” (read: mini panic attacks followed by breakthroughs). Basically, it was like a bootcamp—but with better snacks, more caffeine, and less screaming. ☕💻🔥",
+        description: "Sapient gave me the perfect excuse to move to one of my favorite cities—aka, the Silicon Valley of India—where I ended up spending more time than anywhere else besides my hometown. It’s also where my front-end skills got a glow-up, thanks to a constant stream of “fun little challenges” (read: mini panic attacks followed by breakthroughs). Basically, it was like a bootcamp—but with better snacks, more caffeine, and less screaming. ☕💻🔥",
         link: "https://www.publicissapient.com/",
     },
     {
@@ -224,14 +225,14 @@ export const timeline: timelineType[] = [
         description: `
             I’ve been working in frontend development since 2016, during which I’ve had the opportunity to explore a wide range of evolving technologies. My journey has taken me through both service-based and product-based organizations, giving me a well-rounded perspective on software delivery.
             
-            Throughout the years, I’ve collaborated with clients across diverse industries—including telecom, retail/e-commerce, healthcare, insurance, and travel & hospitality. This exposure has helped me develop a deep understanding of different business domains, allowing me to quickly adapt, align with their goals, and contribute meaningfully as part of their teams.
+            Throughout the years, I’ve collaborated with clients across diverse industries—including telecom, retail/e-commerce, healthcare, insurance, and travel & hospitality. This exposure has helped me develop a deep understanding of different business domains, allowing me to quickly adapt, align with their goals, and contribute meaningfully as a part of their teams.
 
             Frontend technology continues to evolve at a rapid pace, constantly introducing new capabilities for building high-performance, user-centric digital experiences. I stay current by engaging with peers in the industry and actively following the latest trends, tools, and best practices to ensure I’m always growing and delivering modern, effective solutions.
         `,
       },
       {
         role: "Web Accessibility",
-        tools: "JavaScript,HTML, CSS, Aria, WCAG, Section 508, NVDA, JAWS, CCA, Voiceover etc.",
+        tools: "JavaScript, HTML, CSS, Aria, WCAG, Section 508, NVDA, JAWS, CCA, Voiceover etc.",
         id: "web-accessibility",
         align: "left",
         image: "/companies/accessibility.jpg",
@@ -243,6 +244,7 @@ export const timeline: timelineType[] = [
         id: "yoga",
         align: "right",
         image: "/companies/yoga.jpeg",
-        description: "Unit with one - I was fortunate to be exposed to the original roots of yoga at a young age, learning that it is much more than just physical postures. Yoga, as taught by ancient Indian sages, is a path toward inner stillness—a tool to calm the fluctuations of the mind and cultivate clarity, focus, and spiritual growth. In the early years, I practiced regularly, but like many, I drifted away amidst the hustle of life. However, over the last 4–5 years, I’ve returned to the practice with renewed commitment. It has not only helped me reconnect with myself but also inspired me to occasionally guide others. ",
+        description: "It's a journey to unite with one - I was fortunate to be exposed to the original roots of yoga at a young age, learning that it is much more than just physical postures. Yoga, as taught by ancient Indian sages, is a path toward inner stillness—a tool to calm the fluctuations of the mind and cultivate clarity, focus, and spiritual growth. In the early years, I practiced regularly, but like many, I drifted away amidst the hustle of life. However, over the last 4–5 years, I’ve returned to the practice with renewed commitment. It has not only helped me reconnect with myself, but also inspired me to occasionally guide others. ",
       },
   ]
+

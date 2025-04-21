@@ -4,7 +4,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { MdOutlineReadMore } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { Image } from "@imagekit/next";
+import ImageWithFallback from './lib/imageWithFallback';
 
 
 const Work = () => {
@@ -44,14 +44,8 @@ const Work = () => {
                         transition={{duration: 0.3}}  
                     >
                         {/* Image Section */}
-                    <div className="relative w-full min-h-20">
-                        <Image
-                            src={bgImage}
-                            alt={title}
-                            fill
-                            loading="lazy"
-                            className="object-cover object-center"
-                        />
+                    <div className="relative w-full min-h-20 border-b-gray-100">
+                        <ImageWithFallback src={bgImage} alt={title} classname="object-cover object-center" fill />
                     </div>
     
                         {/* Content Section */}
