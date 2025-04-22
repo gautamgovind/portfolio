@@ -11,7 +11,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Introduction = () => {
   return (
-    <div id='introduction' className='w-11/!2 pt-2 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4'>
+    <section id='introduction' className='w-11/!2 pt-2 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4'>
         <motion.div
             initial={{ scale: 0 }} 
             whileInView={{ scale: 1 }} 
@@ -58,6 +58,7 @@ const Introduction = () => {
             </motion.a>
             <motion.a 
                 href="/GautamGovind.pdf" 
+                aria-label='click on the link to download'
                 download 
                 className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:bg-white dark:text-black'
                 initial={{ y: 30, opacity: 0 }} 
@@ -67,7 +68,7 @@ const Introduction = () => {
                 My Resume <BsDownload />
             </motion.a>
         </div>
-    </div>
+    </section>
   )
 }
 

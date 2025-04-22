@@ -48,8 +48,11 @@ const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
       : visibleImages;
 
   return (
-    <div className="relative w-full bg-lightBrown dark:bg-transparent  p-2 rounded-md max-w-full h-[310px] md:h-[360px] overflow-hidden">
-      <div className="flex w-full h-full gap-4 transition-transform duration-500">
+    <div className="carousel-items relative w-full bg-lightBrown dark:bg-transparent  p-2 rounded-md max-w-full h-[310px] md:h-[360px] overflow-hidden"
+      aria-live="polite"
+      aria-atomic="false"
+    >
+      <div className="flex w-full h-full gap-4 transition-transform duration-500" role="group" aria-roledescription="slide">
       {wrappedImages.map(({src, alt}, i) => (
           <div key={i} className={`flex-1 h-full ${i%2 == 0 && "md:border-r-[0.5] border-gray-700"}`}>
             <div className="relative w-full h-full rounded-md overflow-hidden">
@@ -67,6 +70,7 @@ const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
         className="absolute top-0 bottom-0 left-0 px-4 bg-black/20 hover:bg-black/30 text-white z-10"
         onClick={showPrev}
         aria-label="Previous Slide"
+         aria-controls="carousel-items"
       >
         <FaChevronLeft size={30} color="black"/>
       </button>
@@ -74,6 +78,7 @@ const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
         className="absolute top-0 bottom-0 right-0 px-4 bg-black/20 hover:bg-black/30 text-white z-10"
         onClick={showNext}
         aria-label="Next Slide"
+         aria-controls="carousel-items"
       >
         <FaChevronRight size={30} color="black"/>
       </button>

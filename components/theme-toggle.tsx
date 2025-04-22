@@ -25,7 +25,9 @@ const ThemeToggle = () => {
   },[isDarkMode])
   
   return (
-    <button onClick={()=>setIsDarkMode((prev) => (prev === "dark" ? "light" : "dark"))}>
+    <button onClick={()=>setIsDarkMode((prev) => (prev === "dark" ? "light" : "dark"))} 
+        aria-label={`${isDarkMode === "dark" ? "light mode on" : "dark mode on"}`}
+    >
       {isDarkMode === 'dark' ? (
           <IoMoonOutline className='size-6 text-orange-300' />
           ): <MdWbSunny className='size-7 text-sky-950' />

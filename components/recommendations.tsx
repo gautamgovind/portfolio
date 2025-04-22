@@ -8,7 +8,7 @@ import { SliderImages } from './lib/assets';
 
 const Recommendations = () => {
   return (
-    <motion.div id='recommendations-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.section id='recommendations-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1}}
@@ -26,7 +26,9 @@ const Recommendations = () => {
             transition={{duration: 0.6, delay: 0.7}}
         >
             People I’ve worked with have things to say — most of them nice — just snapshots from the full reviews. To read the complete feedback, head over to my  
-            <a href="https://www.linkedin.com/in/gautamgovind/#recommendations" target='_blank' className='font-semibold inline-flex items-center '> 
+            <a href="https://www.linkedin.com/in/gautamgovind/#recommendations" target='_blank' className='font-semibold inline-flex items-center'
+                aria-label="Go to Gautam's linkedin profile, link will open in new tab"
+            > 
                 <span className='inline-flex px-1'> LinkedIn profile.</span> <RxOpenInNewWindow className='inline-block' />
             </a>
         </motion.p>
@@ -38,7 +40,7 @@ const Recommendations = () => {
         >
             <ImageSlider imageUrls={SliderImages} />
         </motion.section>
-    </motion.div>
+    </motion.section>
   )
 }
 

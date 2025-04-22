@@ -10,7 +10,7 @@ import ImageWithFallback from './lib/imageWithFallback';
 const Work = () => {
 
   return (
-    <motion.div id='work-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.section id='work-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1}}
@@ -35,7 +35,7 @@ const Work = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.6, delay: 0.7}}
         >
-            {workData.map(({title, description, bgImage},index)=>{
+            {workData.map(({title, description, bgImage, link, alt},index)=>{
                 return(
                     <motion.div 
                         key={index} 
@@ -45,7 +45,7 @@ const Work = () => {
                     >
                         {/* Image Section */}
                     <div className="relative w-full min-h-20 border-b-gray-100">
-                        <ImageWithFallback src={bgImage} alt={title} classname="object-cover object-center" fill />
+                        <ImageWithFallback src={bgImage} alt={alt} classname="object-cover object-center" fill />
                     </div>
     
                         {/* Content Section */}
@@ -55,7 +55,7 @@ const Work = () => {
                                 <p className="text-sm text-gray-700">{description}</p>
                             </div>
                             <div className="border rounded-full flex items-center justify-center border-black w-9 aspect-square shadow-[2px_2px_0_#000] group-hover:bg-gray-400 transition">
-                                <Link href="/my-journey"><BsFillSendFill /></Link>
+                                <Link href={link} aria-label={`go to my journey's ${alt} section`}><BsFillSendFill /></Link>
                             </div>
                         </div>
                     </motion.div>
@@ -63,7 +63,7 @@ const Work = () => {
             })}
         </motion.div>
 
-        <Link href="/my-journey">
+        <Link href="/my-journey" aria-label='go to my journey to read about education and experience in details'>
             <motion.div 
                 className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full px-10 py-3 my-20 mx-auto hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHoveer'
                 initial={{opacity: 0 }} 
@@ -73,7 +73,7 @@ const Work = () => {
                 Show more <MdOutlineReadMore />
             </motion.div>
         </Link>
-    </motion.div>
+    </motion.section>
   )
 }
 

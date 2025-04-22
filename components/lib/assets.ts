@@ -118,32 +118,44 @@ export type workDataType = {
     title: string;
     description: string;
     bgImage: string;
+    link: string;
+    alt: string;
 }
 export const workData: workDataType[] = [
     {
         title: 'Senior Frontend Developer',
         description: 'Web Development',
         bgImage: "/companies/nexer.png",
+        alt: "nexer",
+        link: "/my-journey/#nexer"
     },
     {
         title: 'Senior Frontend Developer',
         description: 'Web Development and Leading team',
         bgImage: "/companies/ibm.jpg",
+        alt: "ibm",
+        link: "/my-journey/#ibm"
     },
     {
         title: 'Senior Frontend devloper',
         description: 'Web Development',
         bgImage: "/companies/ascena.png",
+        alt: "ascena",
+        link: "/my-journey/#ascena"
     },
     {
         title: 'Interactive Project',
         description: 'Making web pages',
         bgImage: "/companies/sapient.jpg",
+        alt: "sapient",
+        link: "/my-journey/#sapient"
     },
     {
         title: 'Accessibility Consultant',
         description: 'Accessing & testing accessibility',
         bgImage: "/companies/cognizant.jpg",
+        alt: "cognizant",
+        link: "/my-journey/#cts"
     },
 ]
 

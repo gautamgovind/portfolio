@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <motion.div id='about-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.section id='about-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1, delay: 0.2}}
@@ -105,7 +105,7 @@ const About = () => {
 
             </motion.div>
         </motion.div>
-    </motion.div>
+    </motion.section>
   )
 }
 

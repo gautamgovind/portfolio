@@ -7,7 +7,7 @@ import { AwSliderImages } from './lib/assets';
 
 const OutsideWork = () => {
   return (
-    <motion.div id='outsidework-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.section id='outsidework-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1}}
@@ -37,7 +37,7 @@ const OutsideWork = () => {
         >
             <ImageSlider imageUrls={AwSliderImages} />
         </motion.section>
-    </motion.div>
+    </motion.section>
   )
 }
 

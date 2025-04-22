@@ -61,7 +61,7 @@ const Journey = () => {
                         <div className="bg-darkBrown">
                             <ImageWithFallback 
                                 src={image} 
-                                alt={`${name} team`} 
+                                alt=""
                                 height={200}
                                 width={400}
                                 loading="eager"

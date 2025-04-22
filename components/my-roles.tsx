@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const MyRoles = () => {
   return (
-    <motion.div id='service-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.section id='service-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1}}
@@ -51,12 +51,12 @@ const MyRoles = () => {
                         <div className="flex justify-center"><Icon size={30} /></div>
                         <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                         <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>{description}</p>
-                        <Link href={link} className='flex items-center gap-2 text-sm mt-5'>Read more <MdOutlineReadMore size={20}/> </Link>
+                        <Link href={link} className='flex items-center gap-2 text-sm mt-5' aria-label={`go to ${title} section`}>Read more <MdOutlineReadMore size={20}/> </Link>
                     </motion.div>
                 )
             })}
         </motion.div>
-    </motion.div>
+    </motion.section>
   )
 }
 

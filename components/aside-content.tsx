@@ -49,7 +49,7 @@ const AsideContent = () => {
     },[activeSection]);
 
   return (
-    <div className="p-5  flex justify-center relative">
+    <div className="p-5  flex justify-center relative" aria-label='Quick access to the different section of the page'>
         <ul className='sm:static md:fixed top-40 flex flex-col flex-wrap  py-5 px-5 font-Josefin'>
             {NavLinks.map(({href, label},index)=>(
                 <motion.li key={index} 
