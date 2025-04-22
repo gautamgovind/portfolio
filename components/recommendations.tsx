@@ -2,9 +2,8 @@
 
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { motion } from "framer-motion";
-
-import ImageSlider from './lib/image-slider';
 import { SliderImages } from './lib/assets';
+import Carousel from "./lib/carousel";
 
 const Recommendations = () => {
   return (
@@ -38,7 +37,7 @@ const Recommendations = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 1, delay: 0.3}}
         >
-            <ImageSlider imageUrls={SliderImages} />
+            <Carousel imageUrls={SliderImages} />
         </motion.section>
     </motion.section>
   )

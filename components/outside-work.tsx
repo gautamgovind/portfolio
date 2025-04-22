@@ -1,9 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion";
-
-import ImageSlider from './lib/image-slider';
 import { AwSliderImages } from './lib/assets';
+import Carousel from "./lib/carousel";
 
 const OutsideWork = () => {
   return (
@@ -35,7 +34,7 @@ const OutsideWork = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 1, delay: 0.3}}
         >
-            <ImageSlider imageUrls={AwSliderImages} />
+            <Carousel imageUrls={AwSliderImages} />
         </motion.section>
     </motion.section>
   )

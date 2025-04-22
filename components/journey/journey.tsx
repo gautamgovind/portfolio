@@ -5,7 +5,7 @@ import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 import { IoLocationOutline } from "react-icons/io5";
 import { fadeIn } from '@/framerMotion/variant';
 import { timeline } from '@/components/lib/assets';
-import ImageWithFallback from '../lib/imageWithFallback';
+import ImageWithFallback from '../lib/image-with-fallback';
 
 
 const Journey = () => {

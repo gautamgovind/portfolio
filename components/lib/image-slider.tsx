@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import ImageWithFallback from "./imageWithFallback";
+import ImageWithFallback from "./image-with-fallback";
 import { SliderImageType } from "./assets";
 
 type ImageSliderProps = {

@@ -4,7 +4,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { MdOutlineReadMore } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import ImageWithFallback from './lib/imageWithFallback';
+import ImageWithFallback from './lib/image-with-fallback';
 
 
 const Work = () => {

@@ -32,7 +32,6 @@ const ImageWithFallback = ({src, alt, classname="", loading="lazy", ...props}: P
         urlEndpoint: defaultBgImage,
         src: fallbackSrc,
         transformation: [
-            { quality: 8, blur: 90 },
             // {}, // Any other transformation you want to apply
         ],
       });
