@@ -7,7 +7,7 @@ import { AwSliderImages } from './lib/assets';
 
 const OutsideWork = () => {
   return (
-    <motion.div id='recommendations-section' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.div id='outsidework-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
         whileInView={{ opacity: 1 }} 
         transition={{duration: 1}}
