@@ -46,7 +46,7 @@ const Contact = () => {
             Connect with me
         </motion.h4>
         <motion.h2 
-            className='text-center text-5xl font-Ovo'
+            className='text-center md:text-5xl text-4xl font-Ovo'
             initial={{y: -20, opacity: 0 }} 
             whileInView={{ y:0, opacity: 1 }} 
             transition={{duration: 0.5, delay: 0.4}}

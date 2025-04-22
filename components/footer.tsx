@@ -7,6 +7,7 @@ import { ImGithub } from "react-icons/im";
 import { IoLogoYoutube } from "react-icons/io";
 import { GrLinkedin } from "react-icons/gr";
 import { useThemeContext } from './hooks/useThemeContext';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -14,7 +15,9 @@ const Footer = () => {
   return (
     <footer className='mt-20'>
         <div className='text-center'>
-            <Image src={isDarkMode=== 'dark' ? assetsImages.gautamFeLogo: assetsImages.gautamLogo} alt='' className='w-28 mx-auto mb-2 border dark:border-gray-800 rounded-full' />
+            <Link href="/#introduction">
+                <Image src={isDarkMode=== 'dark' ? assetsImages.gautamFeLogo: assetsImages.gautamLogo} alt='' className='w-28 mx-auto mb-2 border dark:border-gray-800 rounded-full' />
+            </Link>            
             <div className='flex items-center gap-2 mx-auto w-max'>
                 <IoMdMail size={20}/> gautam.govind04@gmail.com
             </div>

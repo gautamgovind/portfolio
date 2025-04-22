@@ -1,12 +1,11 @@
 "use client"
 
-import { RxOpenInNewWindow } from "react-icons/rx";
 import { motion } from "framer-motion";
 
 import ImageSlider from './lib/image-slider';
 import { SliderImages } from './lib/assets';
 
-const Recommendations = () => {
+const OutsideWork = () => {
   return (
     <motion.div id='recommendations-section' className='w-full px-[12%] py-10 scroll-mt-20'
         initial={{opacity: 0 }} 
@@ -18,17 +17,17 @@ const Recommendations = () => {
             whileInView={{ y:0, opacity: 1 }} 
             transition={{duration: 0.5, delay: 0.7}}
         >
-            Recommendations
+            Outside Work
         </motion.h2>
         <motion.p className='text-center mx-auto mt-5 mb-12 max-w-3xl font-Ovo'
             initial={{opacity: 0 }} 
             whileInView={{ opacity: 1 }} 
             transition={{duration: 0.6, delay: 0.7}}
         >
-            People I’ve worked with have things to say — most of them nice — just snapshots from the full reviews. To read the complete feedback, head over to my  
-            <a href="https://www.linkedin.com/in/gautamgovind/#recommendations" target='_blank' className='font-semibold inline-flex items-center '> 
-                <span className='inline-flex px-1'> LinkedIn profile.</span> <RxOpenInNewWindow className='inline-block' />
-            </a>
+            I’m not just the kind of person who makes work fun—I’m even more fun when there’s no Wi-Fi and a parachute involved. Outside the office, 
+            you’ll find me chasing thrills through skydiving, paragliding, scuba diving, rafting, and bungee jumping (yes, willingly). 
+            Like many, I love to travel—new places, new cultures, new foods… and occasionally getting lost on purpose. 
+            It&apos;s my favorite way to learn, grow, and collect stories that start with “So there was this one time….
         </motion.p>
 
         <motion.section aria-label="Recommendation carousel" className="w-full my-10 aspect-auto relative"
@@ -42,4 +41,4 @@ const Recommendations = () => {
   )
 }
 
-export default Recommendations
+export default OutsideWork

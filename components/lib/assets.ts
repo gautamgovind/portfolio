@@ -14,12 +14,46 @@ import recom4 from '../../assets/recom-4.png';
 import recom5 from '../../assets/recom-5.png';
 import recom6 from '../../assets/recom-6.png';
 import recom7 from '../../assets/recom-7.png';
-import recom8 from '../../assets/recom-8.png';
 
 export const defaultBgImage = "https://ik.imagekit.io/5rjlj8hkl";
 
 export const CarouselImages = [
-    recom1, recom2, recom3, recom4, recom5, recom6, recom7, recom8, 
+    recom1, recom2, recom3, recom4, recom5, recom6, recom7
+]
+
+export type SliderImageType = {
+    src: string;
+    alt: string;
+}
+export const SliderImages:SliderImageType[] = [
+    {
+        src: `${defaultBgImage}/recommendation/recom-1.png`,
+        alt: "Siavash Rostami says about Gautam - Working with Gautam was a great experience! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-2.png`,
+        alt: "Suman Majumdar says about Gautam - Gautam is an exceptional frontend developer who consistently deliver high-quality work! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-3.png`,
+        alt: "Dhirendra Mishra says about Gautam - It has been a privilage to work with Gautam, whose leadership skills and commitment to excellence set him apart! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-4.png`,
+        alt: "Avik Modi says about Gautam - Gautam had joined my team at his early stage of career and his enthusiasm and confidence were praiseworthy.! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-5.png`,
+        alt: "Kevin Bruland says about Gautam - Gautam is a strong and extremely valuable developer! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-6.png`,
+        alt: "Danish Farid says about Gautam - I have worked with Gautam in scrum team and he actually lives the value of agile and scrum! you can visit Gautam's Linkedin profile to see full review"
+    },
+    {
+        src: `${defaultBgImage}/recommendation/recom-7.png`,
+        alt: "Anjum Warsi says about Gautam - Gautam is a sharp and dedicated developer and take great pride in what he does! you can visit Gautam's Linkedin profile to see full review"
+    },
 ]
 
 export type assetsImagesType= {
