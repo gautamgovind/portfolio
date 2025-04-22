@@ -56,6 +56,45 @@ export const SliderImages:SliderImageType[] = [
     },
 ]
 
+export const AwSliderImages:SliderImageType[] = [
+    {
+        src: `${defaultBgImage}/fun/3.png`,
+        alt: "Sky diving in Prague"
+    },
+    {
+        src: `${defaultBgImage}/fun/4.png`,
+        alt: "Skydiving in Praha"
+    },
+    {
+        src: `${defaultBgImage}/fun/5.png`,
+        alt: "Skydiving in Praha"
+    },
+    {
+        src: `${defaultBgImage}/fun/riverrafting.jpeg`,
+        alt: "river rafting in Rishikesh"
+    },
+    {
+        src: `${defaultBgImage}/fun/bike.jpeg`,
+        alt: "skatås ryggar - 7KM intence race"
+    },
+    {
+        src: `${defaultBgImage}/fun/bungyjump.jpeg`,
+        alt: "Bungy Jump in Goa"
+    },
+    {
+        src: `${defaultBgImage}/fun/paragliding-sea.jpeg`,
+        alt: "Paragliding in Goa"
+    },
+    {
+        src: `${defaultBgImage}/fun/paragliding1.jpeg`,
+        alt: "Paragliding in Bir"
+    },
+    {
+        src: `${defaultBgImage}/fun/paragliding.jpeg`,
+        alt: "Paragliding in Bir"
+    },
+]
+
 export type assetsImagesType= {
     gautamImg: string | StaticImageData;
     author: string | StaticImageData;

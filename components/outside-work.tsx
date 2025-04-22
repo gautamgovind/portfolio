@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import ImageSlider from './lib/image-slider';
-import { SliderImages } from './lib/assets';
+import { AwSliderImages } from './lib/assets';
 
 const OutsideWork = () => {
   return (
@@ -35,7 +35,7 @@ const OutsideWork = () => {
             whileInView={{ opacity: 1 }} 
             transition={{duration: 1, delay: 0.3}}
         >
-            <ImageSlider imageUrls={SliderImages} />
+            <ImageSlider imageUrls={AwSliderImages} />
         </motion.section>
     </motion.div>
   )
